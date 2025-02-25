@@ -33,5 +33,13 @@ variable "z" {
   }
 }
 output "name" {
-  value = "name - ${var.z["name"]}", age - ${var.z.age}
+  value = "name - ${var.z["name"]}, age - ${var.z.age}"
+}
+variable"input" {}
+output "input" {
+  value = var.input
+}
+variable "trainer" {}
+output "trainer" {
+  value = var.trainer
 }
