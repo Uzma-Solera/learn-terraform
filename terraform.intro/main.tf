@@ -19,3 +19,10 @@ output "x" {
 output "x1" {
   value = "value of x - ${var.x}"
 }
+
+variable "y" {
+  default = [ 1,"abc", 3, false]
+}
+output "y1" {
+  value = var.y[0]
+}
