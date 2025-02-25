@@ -26,3 +26,12 @@ variable "y" {
 output "y1" {
   value = var.y[0]
 }
+variable "z" {
+  default = {
+    name = "uzma"
+    age = 18
+  }
+}
+output "name" {
+  value = "name - ${var.z["name"]}", age - ${var.z.age}
+}
