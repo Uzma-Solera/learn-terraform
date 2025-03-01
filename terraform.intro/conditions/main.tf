@@ -8,5 +8,6 @@ variable "content" {
 }
 
 resource "null_resource" "example" {
-  count = var.content == "null" ? 0 : 1
+  count = var.content == null ? 0 : 1
 }
+
