@@ -11,9 +11,6 @@ resource "local_file" "example" {
   filename = "/tmp/a.txt"
 }
 
-variable "content" {
-  default = null
-}
 
 resource "null_resource" "example" {
   count = var.content == null ? 0 : 1
