@@ -1,3 +1,0 @@
-variable "content" {
-  default = null
-}
